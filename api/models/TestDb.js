@@ -6,9 +6,10 @@
  */
 
 module.exports = {
-
+    autoCreatedAt: 'created_at',
+    autoUpdatedAt: 'updated_at',
     attributes: {
-
+        data: {type: 'string'},
     }
 };
 
