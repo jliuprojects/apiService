@@ -38,6 +38,9 @@ module.exports.routes = {
 
     'get /testDb' : 'TestDbController.find',
 
+    
+    'get /auth/facebook'        : 'UserController.verifyFacebook',
+
     /***************************************************************************
     *                                                                          *
     * Custom routes here...                                                    *
