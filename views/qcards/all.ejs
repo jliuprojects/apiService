@@ -1,8 +1,17 @@
+<style>
+    .hoverHide {
+        opacity: 0;
+    }
+
+    .hoverHide:hover {
+        opacity: 1;
+    }
+</style>
 <div> 
     <% cards.forEach(function (card) { %>
         <ul>
             <li>QUESTION: <%= card.question %></li>
-            <li>AMSWER: <%= card.answer %></li>
+            <li class='hoverHide'>AMSWER: <%= card.answer %></li>
         </ul>
     <% }); %>
 </div>

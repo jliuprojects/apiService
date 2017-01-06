@@ -41,13 +41,16 @@ module.exports.routes = {
     'get /qcards' : {
         view : 'qcards/home'
     },
-    'get /qcards/add' : {
-        view : 'qcards/add'
-    },
+
+
+    'get /qcards/add' : 'QcardController.add',
+    'post /qcards/add' : 'QcardController.add',
 
     'get /qcards/all' : 'QcardController.renderAll',
 
-    'post /qcards/post' : 'QcardController.postCard',
+    'get /qcards/r/all' : 'QcardController.find',
+
+    
 
 
 
