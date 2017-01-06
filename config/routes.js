@@ -38,7 +38,20 @@ module.exports.routes = {
 
     'get /testDb' : 'TestDbController.find',
 
-    
+    'get /qcards' : {
+        view : 'qcards/home'
+    },
+    'get /qcards/add' : {
+        view : 'qcards/add'
+    },
+
+    'get /qcards/all' : 'QcardController.renderAll',
+
+    'post /qcards/post' : 'QcardController.postCard',
+
+
+
+
     'get /auth/facebook'        : 'UserController.verifyFacebook',
 
     /***************************************************************************
